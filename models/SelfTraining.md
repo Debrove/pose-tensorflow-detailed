@@ -71,10 +71,12 @@ array([[(array(['/dir/dataset/im00005_1.png'], dtype='<U26'), array([[  3, 391, 
        [ 13,  31,  11]], dtype=int32)]], dtype=object))]],
       dtype=[('image', 'O'), ('size', 'O'), ('joints', 'O')])
 ```
-图片路径，为array，U26格式；
-图片尺寸，为array,uint8格式；
-图片关键点，这里非常特殊，笔者从np.array一直生成不到一模一样的格式，于是不得不草船借箭，从案例数据（`data templates`）那边把格式借过来。
-笔者写了一个简单实现案例：[dataset_generator.py](https://github.com/mattzheng/pose-tensorflow/blob/master/models/dataset_generator.py)
+ - 图片路径，为array，U26格式；
+ - 图片尺寸，为array,uint8格式；
+ - 图片关键点，这里非常特殊，笔者从np.array一直生成不到一模一样的格式，于是不得不草船借箭，从案例数据（`data
+   templates`）那边把格式借过来。
+
+笔者写了一个简单实现案例，可以借鉴：[dataset_generator.py](https://github.com/mattzheng/pose-tensorflow/blob/master/models/dataset_generator.py)
 
 
 ----------
