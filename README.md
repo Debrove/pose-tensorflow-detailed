@@ -55,6 +55,15 @@ for explanation).
 If your machine has multiple GPUs, you can select which GPU you want to run on
 by setting the environment variable, eg. `CUDA_VISIBLE_DEVICES=0`.
 
+
+## Training models
+
+ - coco（多人场景）/MPII（单人场景）数据集训练教程：[README.md](https://github.com/mattzheng/pose-tensorflow-detailed/blob/master/models/README.md)
+ - 自己数据集训练教程：
+   [SelfTraining.md](https://github.com/mattzheng/pose-tensorflow-detailed/blob/master/models/SelfTraining.md)
+
+
+
 ## Demo code
 
 Single-Person (if there is only one person in the image)
@@ -83,12 +92,6 @@ $ cd -
 # Run demo of multi person pose estimation
 $ TF_CUDNN_USE_AUTOTUNE=0 python3 demo/demo_multiperson.py
 ```
-
-## Training models
-
- - coco（多人场景）/MPII（单人场景）数据集训练教程：[README.md](https://github.com/mattzheng/pose-tensorflow-detailed/blob/master/models/README.md)
- - 自己数据集训练教程：
-   [SelfTraining.md](https://github.com/mattzheng/pose-tensorflow-detailed/blob/master/models/SelfTraining.md)
 
 
 ## Citation
