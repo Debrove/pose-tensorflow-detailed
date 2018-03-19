@@ -1,4 +1,3 @@
-Please follow these SelfTraining.md
 
 # Training on your own dataset
 
