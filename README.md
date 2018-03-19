@@ -64,7 +64,10 @@ $ TF_CUDNN_USE_AUTOTUNE=0 python3 demo/demo_multiperson.py
 
 ## Training models
 
-Please follow these [instructions](models/README.md)
+ - coco（多人场景）/MPII（单人场景）数据集训练教程：[README.md](https://github.com/mattzheng/pose-tensorflow/blob/master/models/README.md)
+ - 自己数据集训练教程：
+   [SelfTraining.md](https://github.com/mattzheng/pose-tensorflow/blob/master/models/SelfTraining.md)
+
 
 ## Citation
 Please cite ArtTrack and DeeperCut in your publications if it helps your research:
