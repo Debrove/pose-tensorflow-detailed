@@ -183,21 +183,8 @@ $ TF_CUDNN_USE_AUTOTUNE=0 CUDA_VISIBLE_DEVICES=0 python3 ../../../train.py
 ----------
 
 
-### 额外：
-1、注意点一则
+### 注意点一则
 You don't have to crop images such that they all have the same size,
 as training is done with `batch_size=1` (batch size larger than 1 is
 currently not supported anyway).
 
-2、类似项目一则
-[galaxy-fangfang/AI-challenger-pose-estimation](https://github.com/galaxy-fangfang/AI-challenger-pose-estimation) 这大兄弟在玩 [AI challenger](https://challenger.ai/)人体骨骼关节点赛题的时候，同样自己训练并开源出来。
-但是，该比赛的关键点只有：14个（[参考：赛题与数据](https://challenger.ai/competition/keypoint/subject)），该作者在生成时候（[ai2coco_art_neckhead_json.py](https://github.com/galaxy-fangfang/AI-challenger-pose-estimation/blob/master/ai2coco_art_neckhead_json.py)），拼凑成17个点，与coco一致，然后就可以完全使用coco框架训练（多人模式），同时共享pairwise stat。
-
-```
-# right_eye
-cocokey[6:9] = [0, 0, 0]
-# left_ear
-cocokey[9:12] = [0, 0, 0]
-# right_ear
-cocokey[12:15] = [0, 0, 0]
-```
