@@ -27,6 +27,7 @@ def mat_generator(img_path_list,img_size_list,keypoints_list):
 
 if __name__ == '__main__':
     # demo
+    # there are two pictures infomations.
     img_path_list = ['./dir/dataset/im00006_3.png','./dir/dataset/im00005_1.png']
     img_size_list = [[  3, 252, 170],[  3, 391, 295]]  # [num_channels, image_height, image_width]
     keypoints_list = [  [[  3,  80, 187],              # 0-indexed joint ID, X coordinate, Y coordinate
