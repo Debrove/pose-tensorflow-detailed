@@ -7,7 +7,8 @@ from numpy import array as arr
 from numpy import concatenate as cat
 
 import scipy.io as sio
-from scipy.misc import imread, imresize
+from scipy.misc import imresize
+import imageio 
 
 
 class Batch(Enum):
@@ -248,7 +249,7 @@ class PoseDataset:
         im_file = data_item.im_path
         logging.debug('image %s', im_file)
         logging.debug('mirror %r', mirror)
-        image = imread(im_file, mode='RGB')
+        image = imageio.imread(im_file, mode='RGB')
 
         if self.has_gt:
             joints = np.copy(data_item.joints)
