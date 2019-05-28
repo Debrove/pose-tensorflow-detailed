@@ -5,7 +5,7 @@ import numpy as np
 
 sys.path.append(os.path.dirname(__file__) + "/../")
 
-from scipy.misc import imread, imsave
+import imageio
 
 from config import load_config
 from dataset.factory import create as create_dataset
@@ -34,7 +34,7 @@ sess, inputs, outputs = predict.setup_pose_prediction(cfg)
 
 # Read image from file
 file_name = "demo/image_multi.png"
-image = imread(file_name, mode='RGB')
+image = imageio.imread(file_name, mode='RGB')
 
 image_batch = data_to_input(image)
 
